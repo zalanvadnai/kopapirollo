@@ -2,19 +2,31 @@
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kő – Papír – Olló</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Kő – Papír – Olló</h1>
-    <div class="buttons">
-      <button onclick="jatek('kő')">🪨 Kő</button>
-      <button onclick="jatek('papír')">📄 Papír</button>
-      <button onclick="jatek('olló')">✂️ Olló</button>
+  <h1>Kő – Papír – Olló</h1>
+
+  <div class="choices">
+    <div class="choice" onclick="play('kő')">
+      <img src="https://img.icons8.com/emoji/96/rock.png" alt="Kő">
+      <p>Kő</p>
     </div>
-    <p id="eredmeny">Válassz egyet!</p>
+    <div class="choice" onclick="play('papír')">
+      <img src="https://img.icons8.com/emoji/96/page-facing-up.png" alt="Papír">
+      <p>Papír</p>
+    </div>
+    <div class="choice" onclick="play('olló')">
+      <img src="https://img.icons8.com/emoji/96/scissors.png" alt="Olló">
+      <p>Olló</p>
+    </div>
   </div>
+
+  <div class="result" id="result">Kattints egy ikonra, hogy elkezdődjön a játék!</div>
+  <div class="score" id="score">Játékos Pontszáma: 0 | Gép Pontszáma: 0</div>
+
   <script src="script.js"></script>
 </body>
 </html>
