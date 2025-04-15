@@ -1,43 +1,57 @@
 body {
-    font-family: sans-serif;
-    background: linear-gradient(to right, #74ebd5, #9face6);
-    text-align: center;
     margin: 0;
-    padding: 50px;
-  }
-  
-  .container {
-    background-color: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    max-width: 400px;
-    margin: auto;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #922535, #6a051e);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
   
   h1 {
-    color: #333;
+    font-size: 3rem;
+    margin-bottom: 20px;
   }
   
-  .buttons button {
-    font-size: 18px;
-    margin: 10px;
-    padding: 15px 25px;
-    border-radius: 12px;
-    border: none;
+  .choices {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .choice {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.3s, background 0.3s;
     cursor: pointer;
-    background-color: #ffffff;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-    transition: transform 0.2s;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
   }
   
-  .buttons button:hover {
+  .choice:hover {
     transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
   }
   
-  #eredmeny {
+  .choice img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .result {
+    font-size: 2rem;
     margin-top: 20px;
-    font-size: 20px;
-    color: #444;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 15px;
+  }
+  
+  .score {
+    font-size: 1.5rem;
+    margin-top: 10px;
   }
   
